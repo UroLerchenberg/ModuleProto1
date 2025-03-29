@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Präsentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .modal-content {
+            background: white;
+            padding: 20px;
+            margin: 10% auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Präsentation</h1>
+    <h2>Die Prostatakrebsfrüherkennung im Blut: Modul 1</h2>
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-001.jpg" alt="Präsentation Seite 1">
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-002.jpg" alt="Präsentation Seite 2">
+    <button onclick="openModal('Die Prostatakrebsfrüherkennung im Blut: Modul 1')">Auswählen</button>
+    <h2>Die Optimale Prostatakrebsfrüherkennung: Modul 2</h2>
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-003.jpg" alt="Präsentation Seite 3">
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-004.jpg" alt="Präsentation Seite 4">
+    <button onclick="openModal('Die Optimale Prostatakrebsfrüherkennung: Modul 2')">Auswählen</button>
+    <h2>Der Blut-Check (Prostata/Tumormarker): Modul 3</h2>
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-005.jpg" alt="Präsentation Seite 5">
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-006.jpg" alt="Präsentation Seite 6">
+    <button onclick="openModal('Der Blut-Check (Prostata/Tumormarker): Modul 3')">Auswählen</button>
+    <h2>Die Blasenkrebsfrüherkennung im Urin (UBC): Modul 4</h2>
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-007.jpg" alt="Präsentation Seite 7">
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-008.jpg" alt="Präsentation Seite 8">
+    <button onclick="openModal('Die Blasenkrebsfrüherkennung im Urin (UBC): Modul 4')">Auswählen</button>
+    <h2>Die Optimale Blasen- und Nierenkrebsfüherkennung: Modul 5</h2>
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-009.jpg" alt="Präsentation Seite 9">
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-010.jpg" alt="Präsentation Seite 10">
+    <button onclick="openModal('Die Optimale Blasen- und Nierenkrebsfüherkennung: Modul 5')">Auswählen</button>
+    <h2>Spezielcheck für Männer: Modul 6</h2>
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-011.jpg" alt="Präsentation Seite 11">
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-012.jpg" alt="Präsentation Seite 12">
+    <button onclick="openModal('Spezielcheck für Männer: Modul 6')">Auswählen</button>
+    <h2>Sterilisierungsoperation beim Mann (Vasektomie beidseits): Modul 7</h2>
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-013.jpg" alt="Präsentation Seite 13">
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-014.jpg" alt="Präsentation Seite 14">
+    <button onclick="openModal('Sterilisierungsoperation beim Mann (Vasektomie beidseits): Modul 7')">Auswählen</button>
+    <h2>Vorbeugung von Harnwegsinfektionen durch StroVac Impfung für die Frau: Modul 8</h2>
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-015.jpg" alt="Präsentation Seite 15">
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-016.jpg" alt="Präsentation Seite 16">
+    <button onclick="openModal('Vorbeugung von Harnwegsinfektionen durch StroVac Impfung für die Frau: Modul 8')">Auswählen</button>
+    <h2>Ausführliche Eröterung und Beratung: Modul 9</h2>
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-017.jpg" alt="Präsentation Seite 17">
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-018.jpg" alt="Präsentation Seite 18">
+    <button onclick="openModal('Ausführliche Eröterung und Beratung: Modul 9')">Auswählen</button>
+    <h2>ESWT – Extrakorporale Stoßwellentherapie - GentlePro: Modul 10</h2>
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-019.jpg" alt="Präsentation Seite 19">
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-020.jpg" alt="Präsentation Seite 20">
+    <button onclick="openModal('ESWT – Extrakorporale Stoßwellentherapie - GentlePro: Modul 10')">Auswählen</button>
+    <h2>ESWT – Extrakorporale Stoßwellentherapie - GentlePro - Bei schmerzhafter Krümmung des Penises: Modul 11</h2>
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-021.jpg" alt="Präsentation Seite 21">
+    <img src="https://github.com/UroLerchenberg/Bilder/raw/main/Präsentation1-page-022.jpg" alt="Präsentation Seite 22">
+    <button onclick="openModal('ESWT – Extrakorporale Stoßwellentherapie - GentlePro - Bei schmerzhafter Krümmung des Penises: Modul 11')">Auswählen</button>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Name eingeben</h2>
+            <input type="text" id="name" placeholder="Ihr Name">
+            <button onclick="sendEmail()">Absenden</button>
+            <button onclick="closeModal()">Schließen</button>
+        </div>
+    </div>
+
+    <script>
+        let selectedModule = "";
+
+        function openModal(module) {
+            selectedModule = module;
+            document.getElementById("modal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+
+        function sendEmail() {
+            let name = document.getElementById("name").value;
+            if (name === "") {
+                alert("Bitte geben Sie Ihren Namen ein.");
+                return;
+            }
+            fetch('send_email.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: new URLSearchParams({
+                    'name': name,
+                    'module': selectedModule
+                })
+            })
+            .then(response => response.text())
+            .then(data => alert(data))
+            .catch(error => alert('Fehler beim Senden der E-Mail: ' + error));
+        }
+    </script>
+</body>
+</html>
